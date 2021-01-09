@@ -1,30 +1,29 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React,{Component} from 'react';
+import { Animated,StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons'; 
 
 export default function Mainloading() {
   return (
-    <LinearGradient colors={["#0f2027","#203a43","#2c5364"]} style={styles.container}>
-      <Ionicons name="ios-planet-outline" size={35} color="white" />
+    <LinearGradient colors={["#292e49","#536976","#292e49"]} style={styles.container}>
+      <Ionicons name="ios-planet-outline" size={80} color="white" />
       <Text style={styles.Text}>Space Sound</Text>
-      <Text style={styles.Text}>version 1.0.0</Text>
     </LinearGradient>
+    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex:10,
     justifyContent: "center",
     alignItems: "center",
   },
   Text: {
     color: "white",
-    fontSize: 25,
-    fontWeight: "300",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  
+    fontSize: 28,
+    fontWeight: "400",
+    textAlign:"center",
+    margin: 10
+  }
 });
