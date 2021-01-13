@@ -7,7 +7,7 @@ export default function Mainloading() {
   return (
     <LinearGradient colors={["#292e49","#536976","#292e49"]} style={styles.container}>
       <Ionicons name="ios-planet-outline" size={80} color="white" />
-      <Text style={styles.Text}>Space Sound</Text>
+      <Text style={styles.Text}>ASTRO Phenom</Text>
     </LinearGradient>
     
   );
